@@ -1,0 +1,162 @@
+* {
+  overflow: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+body {
+  display: flexbox;
+  padding: 0px;
+  margin: 0;
+  background-image: url('img/plane.jpg ');
+  background-position: center;
+  background-size: 90%;
+  backdrop-filter: blur(10px)
+}
+
+nav {
+  background-color: white;
+  margin-bottom: 5%;
+  padding: 8px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav>span>img {
+  width: 3em;
+  padding-right: 0.9em;
+}
+
+nav>span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav>span>h1 {
+  color: #008080;
+}
+
+nav ul {
+  list-style-type: none;
+  /* padding: 0; */
+}
+
+nav ul li {
+  margin-right: 10px;
+  display: inline;
+}
+
+nav a {
+  text-decoration: none;
+  color: #008080;
+  font-weight: bold;
+  font-size: medium;
+}
+
+nav a:hover {
+  color: forestgreen;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+input[type="search"],
+input[type="number"],
+select {
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  padding: 7px 15px;
+  /* background-color: midnightblue; */
+  background-color: #008080;
+  /*   #6A5ACD #999999  #008080 #808000 #7E57C2 #D2A1A1 #D8CAB8 */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.index-main {
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr;
+  align-items: center;
+}
+
+aside {
+  height: 60vh;
+}
+
+
+footer {
+  display: grid;
+  justify-content: left;
+  padding-bottom: 5px;
+}
+
+footer>a>img {
+  width: 50px;
+}
+
+.about-main {
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 0.5fr 9fr;
+  align-items: center;
+}
+
+.aboutus {
+  display: grid;
+  text-align: center;
+  /* place-items: center; */
+  height: 90vh;
+  width: 90%;
+  border: solid green 2px;
+}
+
+
+.ourTeam {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ourTeam>div {
+  align-items: center;
+  align-content: space-evenly;
+  /* margin: 5px; */
+  /* padding: 0px; */
+}
+
+.ourTeam>div>* {
+  align-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.contact-main {
+  margin: 5px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 9fr;
+  align-items: center;
+}
+
+.contact-main>section {
+  width: 90%;
+  margin: 5px;
+  padding: 5px;
+
+}
+
+.contact-main>section>form {
+  display: grid;
+  width: 60%;
+  height: 50vh;
+}

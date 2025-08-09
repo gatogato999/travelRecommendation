@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>contact us</title>
+    <link href="./travel_recommendation.css " rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <!-- TODO : a logo and agency name -->
+      <span>
+        <img src="img/vifm.png " alt="logo ">
+        <h1>TRAVELLO</h1>
+      </span>
+      <!-- TODO : navigation bar that has :home aboutus, contactus -->
+      <ul>
+        <li><a href="index.html" id="home">Home</a></li>
+        <li><a href="aboutUs.html" id="aboutUs">About Us</a></li>
+        <li><a href="contactUs.html" id=" contactUs">Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- TODO :main content shows a form to fill -->
+    <main class="contact-main">
+      <footer>
+        <!-- TODO : social media links as logo : x, facebook, insta, youtube-->
+        <a href="www.x.com"><img src="svg/icons8-twitter-bird.svg " alt="twitter"></a>
+        <a href="www.facebook.com"><img src="svg/icons8-facebook.svg " alt="facebook"></a>
+        <a href="www.instagram.com"><img src="svg/icons8-instagram.svg " alt="instagram"></a>
+        <a href="www.youtube.com"><img src="svg/icons8-youtube.svg " alt="youtube"></a>
+      </footer>
+      <section>
+        <h1>CONTACT US</h1>
+        <p>get in touch ...</p>
+      </section>
+      <section class="contact-sec">
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name='name'>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email">
+          <label for="message">Message</label>
+          <textarea id='message' name="message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+    <script>
+      const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevent page reload
+
+      const name = form.name.value.trim();
+      const email = form.email.value.trim();
+      const message = form.message.value.trim();
+
+      if (name && email && message) {
+        alert('Thank you! Your message has been submitted.');
+        form.reset(); // Optional: clear the form
+      } else {
+        alert('Please fill in all fields.');
+      }
+    });
+    </script>
+  </body>
+</html>

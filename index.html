@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>home</title>
+  <link href="./travel_recommendation.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <!-- TODO : a logo and agency name -->
+    <span>
+      <img src="img/vifm.png " alt="logo ">
+      <h1>TRAVELLO</h1>
+    </span>
+    <!-- TODO : navigation bar that has :home aboutus, contactus -->
+    <ul>
+      <li><a href="index.html" id="home">Home</a></li>
+      <li><a href="aboutUs.html" id="aboutUs">About Us</a></li>
+      <li><a href="contactUs.html" id=" contactUs">
+          Contact Us
+        </a></li>
+      <!-- TODO :search bar with search and clear buttons -->
+      <li><input style="color: black;" type="text" required id="countryInput" placeholder="Enter destination"></li>
+      <li><button id='btnSearch'><img style="width: 15px ;" src="svg/actions-search.svg " alt="search svg "></button>
+      </li>
+    </ul>
+  </nav>
+  <!-- TODO :main content to encourage people to travel and bookNow button-->
+  <main class="index-main">
+    <footer>
+      <!-- TODO : social media links as logo : x, facebook, insta, youtube-->
+      <a href="www.x.com"><img src="svg/icons8-twitter-bird.svg " alt="twitter"></a>
+      <a href="www.facebook.com"><img src="svg/icons8-facebook.svg " alt="facebook"></a>
+      <a href="www.instagram.com"><img src="svg/icons8-instagram.svg " alt="instagram"></a>
+      <a href="www.youtube.com"><img src="svg/icons8-youtube.svg " alt="youtube"></a>
+    </footer>
+    <section>
+      <h1>
+        EXPLORE DREAM DESTINATION
+      </h1>
+      <p>
+        it encourages exploration of unfamiliar territories, embracing diverse
+        cultures and landscapes, while pursuing the desired destination
+        that captivates the heart and ignites a sense of wonder.
+      </p>
+      <button>Book Now</button>
+    </section>
+    <!-- TODO : side section represent search result -->
+    <aside id="searchResult">
+      <div class="searchCondition">
+        <div id="result"></div>
+      </div>
+    </aside>
+  </main>
+  <script src='travel_recommendation.js'></script>
+</body>
+
+</html>
